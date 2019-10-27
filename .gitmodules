@@ -1,0 +1,3 @@
+[submodule "src/pdarts"]
+	path = src/pdarts
+	url = https://github.com/chenxin061/pdarts.git
