@@ -2,8 +2,8 @@
 #SBATCH --nodes 1
 #SBATCH --time=08:00:00
 #SBATCH --mem=16G
-#SBATCH --task-per-node=1
-#SBATCH --cpu-per-task=2
+#SBATCH --tasks-per-node=1
+#SBATCH --cpus-per-task=2
 #SBATCH --gres=gpu:p100:1
 #SBATCH --partition=batch
 #SBATCH -J architecture-search-cifar-100
