@@ -12,10 +12,10 @@
 #SBATCH --mail-user=david.pugh@kaust.edu.sa
 #SBATCH --mail-type=ALL
 
-conda activate ./env
-python src/pdarts/train_search.py \
-  --tmp_data_dir ./data/cifar-10/ \
-  --save ./results/logs/cifar-10/ \
+source activate ../env
+python ../src/pdarts/train_search.py \
+  --tmp_data_dir ../data/cifar-10/ \
+  --save ../results/logs/cifar-10/ \
   --add_layers 6 \
   --add_layers 12 \
   --dropout_rate 0.1 \
