@@ -12,6 +12,10 @@
 #SBATCH --mail-user=david.pugh@kaust.edu.sa
 #SBATCH --mail-type=ALL
 
+# if directories already exist, then these commands will not overwrite them
+mkdir -p ../data/cifar-10/
+mkdir -p ../results/logs/cifar-10/
+
 source activate ../env
 python ../src/pdarts/train_search.py \
   --tmp_data_dir ../data/cifar-10/ \
